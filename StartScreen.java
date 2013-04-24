@@ -1,4 +1,3 @@
-
 package darts;
 
 import java.awt.BorderLayout;
@@ -22,7 +21,7 @@ public class StartScreen {
     private JFrame f;
     private JPanel p, pBottom;
     private JPanel pMain;
-    private JButton b1, b2;
+    private JButton b1;
     private JLabel lab, label, lab2;
 
     public StartScreen() {
@@ -47,7 +46,6 @@ public class StartScreen {
         pMain.setBackground(Color.LIGHT_GRAY);
 
         b1 = new JButton("Start 501 Leg");
-        b2 = new JButton("Start 301 Leg");
         lab = new JLabel("Darts Scorer");
         lab2 = new JLabel("Andy Cornforth 2013");
         
@@ -64,15 +62,6 @@ public class StartScreen {
             }
         });
         
-        b2.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent e) {
-
-                Match301 w = new Match301();
-
-            }
-        });
-        
        // add picture
        label = new JLabel(new ImageIcon("C:/Users/Andy/Documents/Home/Darts/src/darts/image.png"));
        
@@ -81,7 +70,6 @@ public class StartScreen {
         */
                 
         pMain.add(b1);
-        pMain.add(b2);
 
         p.add(lab);       
         pMain.add(label);
